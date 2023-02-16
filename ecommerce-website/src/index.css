@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .containerr {
+    @apply mx-auto w-[90%] ;
+  }
+  .custom-flex {
+    @apply flex justify-between items-center;
+  }
+  .col-flex {
+    @apply flex items-center flex-col md:items-start;
+  }
+  .top-p {
+    @apply pt-[50px];
+  }
+}
+
+
