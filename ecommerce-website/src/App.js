@@ -18,10 +18,13 @@ import SearchProduct from "./features/products/SearchProduct";
 import ProductPage from "./features/products/ProductPage";
 import ListOfAll from "./features/products/ListOfAll";
 import CartPage from "./features/cart/CartPage";
+
 const router=createBrowserRouter(
   createRoutesFromElements(
     <>
+    
     <Route path="/" element={<RootLayout/>}>
+    
       <Route index element={<Home/>}/>
       
       <Route path="cart" element={<CartPage/>}/>
