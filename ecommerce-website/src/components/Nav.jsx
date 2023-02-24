@@ -18,6 +18,7 @@ import {
   } from '@chakra-ui/react'
 
   import Search from './Search'
+import Breadcrumbs from './Breadcrumbs'
 function Nav() {
     const { isOpen, onOpen, onClose } = useDisclosure()
     const {isError,isLoading,isSuccess,error}=useGetCategoriesQuery()
@@ -28,6 +29,8 @@ function Nav() {
     }
   
     return (
+      <>
+      
     <nav className='flex justify-end items-center bg-first py-4 pr-5 '>
         <div className="hidden md:flex gap-7 justify-end items-center text-white text-sm font-semibold">
         {isLoading&&<p className='p-2'>'Loading..'</p>}
@@ -60,6 +63,8 @@ function Nav() {
       </Drawer>
         </div>
     </nav>
+    <div><Breadcrumbs/></div>
+  </>
   )
 }
 
